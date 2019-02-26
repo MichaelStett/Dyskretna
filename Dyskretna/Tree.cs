@@ -2,9 +2,15 @@
 {
     public class Tree
     {
-        public char node;
-        public ESymbol type;
-        public Tree left;
-        public Tree right;
+        public char Node { get; set; }
+        public ESymbol Type { get; set; }
+        public Tree Left { get; set; }
+        public Tree Right { get; set; }
+
+        public Tree(char Node, ESymbol Type)
+        {
+            this.Node = Node;
+            this.Type = Type;
+        }
     }
 }

@@ -2,7 +2,7 @@
 {
     public enum ESymbol
     {
-        Operator,
-        Variable
+        Operator = 0,
+        Variable = 1
     }
 }
