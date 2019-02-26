@@ -1,0 +1,15 @@
+﻿Witam.
+Program używa notacji Polskiej dla zapisu rachunku zdań.	
+	C - Implikacja,
+	A - Alternatywa,
+	K - Koniunkcja.
+	N - Negacja.
+Program nie obsługuje operatora równoważności - E.
+
+Przykłady zapisu:
+
+(Prawo esportacji): CCKpqrCpCqr
+
+(Prawo transpozycji): CCpNqCqNp
+
+(Pierwsze prawo redukcji do absurdu): CCpKqNqNp
