@@ -79,11 +79,29 @@
                     switch (t.Node)
                     {
                         case 'C':
-                            return Evaluate(t.Left) ? Evaluate(t.Right) : true;
+                            if(Evaluate(t.Left))
+                            {
+                                return Evaluate(t.Right);
+                            }
+                            return true;
                         case 'K':
-                            return Evaluate(t.Left) ? Evaluate(t.Right) : false;
+                            if (Evaluate(t.Left))
+                            {
+                                return Evaluate(t.Right);
+                            }
+                            else
+                            {
+                                return false;
+                            }                            
                         case 'A':
-                            return Evaluate(t.Left) ? !Evaluate(t.Right) : false;
+                            if (!Evaluate(t.Left))
+                            {
+                                return Evaluate(t.Right);
+                            }
+                            else
+                            {
+                                return true;
+                            }
                         case 'N':
                             return !Evaluate(t.Left);
                         case 'E':

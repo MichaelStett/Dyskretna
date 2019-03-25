@@ -30,7 +30,7 @@ namespace Dyskretna
         public static void Loop()
         {
             foreach (var e in ExpList)
-                Console.WriteLine("- Czy zdanie logiczne '{0}' jest prawdziwe? {1}\n", e, EvExp.Calculate(e) ? "Tak!" : "Nie!");
+                Console.WriteLine("- Czy zdanie logiczne '{0}' jest tautologią? {1}\n", e, EvExp.Calculate(e) ? "Tak!" : "Nie!");
         }
         /// <summary>
         /// Prints ending messege.
